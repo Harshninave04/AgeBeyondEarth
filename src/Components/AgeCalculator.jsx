@@ -1,5 +1,6 @@
 // components/AgeCalculator.js
 import { useState } from "react";
+import "./style.css"
 const AgeCalculator = () => {
   const [age, setAge] = useState(0);
   const [planet, setPlanet] = useState('Earth');
@@ -48,7 +49,7 @@ const AgeCalculator = () => {
   };
 
   return (
-    <div>
+    <div className="age-calculator">
       <h2>Age Calculator</h2>
       <form>
         <label>
