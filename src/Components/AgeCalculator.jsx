@@ -16,6 +16,7 @@ const AgeCalculator = () => {
   let planetYears = 0;
 
   const calculateAge = () => {
+    event.preventDefault();
     switch (planet) {
       case 'Earth':
         planetYears = (age * 365) / 365;
