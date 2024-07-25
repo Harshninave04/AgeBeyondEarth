@@ -1,6 +1,6 @@
 /* AgeCalculator.css */
 
-.age-calculator {
+/* .age-calculator {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -71,4 +71,94 @@
   font-size: 24px;
   text-align: center;
   color: #333;
+} */
+
+/* STYLE FOR BACKGROUND IMAGE IN CARD */
+
+
+
+.age-calculator {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 50px auto;
+  padding: 20px;
+  border-radius: 5px;
+  background-image: url('/public/space.jpg'); /* Replace with your image path */
+  background-size: cover; /* Make the background image cover the entire area */
+  background-position: center; /* Center the background image */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  width: 80%;
+  color: white; /* Change text color for better contrast */
+  position: relative; /* Position relative for overlay */
+}
+
+.age-calculator::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent overlay */
+  border-radius: 5px; /* Match border radius */
+  z-index: 1; /* Ensure overlay is behind the text */
+}
+
+.age-calculator h2 {
+  font-size: 2em;
+  margin-bottom: 20px;
+  text-align: center;
+  color: #fff; /* Change heading color to white */
+  z-index: 2; /* Ensure heading is above overlay */
+  position: relative; /* Position relative to stack above overlay */
+}
+
+.age-calculator form {
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  z-index: 2; /* Ensure form is above overlay */
+  position: relative; /* Position relative to stack above overlay */
+}
+
+.age-calculator label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+  color: #fff; /* Change label color to white */
+  font-size: 20px;
+}
+
+.age-calculator input[type="number"],
+.age-calculator select {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  font-size: 16px;
+  width: 100%;
+  margin-top: 10px;
+}
+
+.age-calculator button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 3px;
+  font-size: 16px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.age-calculator button:hover {
+  background-color: #0069d9;
+}
+
+.age-calculator p {
+  margin-top: 20px;
+  font-size: 24px;
+  text-align: center;
+  color: #fff; /* Change result text color to white */
 }

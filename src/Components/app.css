@@ -1,0 +1,15 @@
+body, html {
+  height: 100%; /* Ensure the body and HTML take full height */
+  margin: 0; /* Remove default margin */
+}
+
+.app-container { /* This is the parent container */
+  display: flex;
+  align-items: center; /* Center vertically */
+  justify-content: center; /* Center horizontally */
+  height: 100vh; /* Full viewport height */
+  background-color: #b93f3f; /* Optional: background color for the parent */
+  background-image: url('/public/space1.jpg');
+  background-size: cover;
+  background-position: center;
+}
